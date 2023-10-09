@@ -27,7 +27,7 @@ Session::regenerate();
 ```
 `destroy();` Destroy the session.
 ```php
-Session::destroy(); Destroy the session.
+Session::destroy();
 ```
 
 Useing Example
