@@ -1,30 +1,31 @@
 # Simpe Session Class
 This class does simple session operations.
 
+`set($key, $value)` Sets session.
 ```php
 set('username', 'Ümit Yatarkalkmaz');
 ```
-`set($key, $value)` Sets session.
+`get($key)` Gets session.
 ```php
 Session::get('username'); 
 ```
-`get($key)` Gets session.
+`remove($key)` Remove session.
 ```php
 Session::remove('username'); 
 ```
-`remove($key)` Remove session.
+`start($sessionName)` Names and starts the session.
 ```php
 Session::start('MySession');
 ```
-`start($sessionName)` Names and starts the session.
+`setTimeout($minutes)` Adds a timeout to the session.
 ```php
 Session::setTimeout(60);
 ```
-`setTimeout($minutes)` Adds a timeout to the session.
+`regenerate()` Regenerate the session.
 ```php
 Session::regenerate();
 ```
-`regenerate()`  Regenerate the session.
+`destroy();` Destroy the session.
 ```php
 Session::destroy(); Destroy the session.
 ```
